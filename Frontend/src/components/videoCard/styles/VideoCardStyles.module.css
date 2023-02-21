@@ -1,0 +1,73 @@
+.videocards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.videocard {
+  box-shadow: 5px 5px 5px 5px rgb(233, 230, 230) !important;
+  padding: 0.1% 0.4%;
+  width: 20%;
+  /* display: block; */
+  cursor: pointer;
+}
+
+.videocard:hover {
+  transform: scale(1.1);
+}
+
+.video_thumbnail {
+  min-width: 100%;
+  height: 75%;
+  margin-left: 0px;
+}
+
+.video_details {
+  height: 15%;
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  padding: 10px 10px !important;
+}
+
+.video_title {
+  margin: 0;
+  /* width: 100%;
+  line-height: 20px !important; */
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1200px) {
+  .videocard {
+    width: 30%;
+  }
+  .videocard:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .videocard {
+    width: 40%;
+  }
+
+  .videocard:not(:first-child):not(:nth-child(2)) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .videocard {
+    width: 70%;
+  }
+  .videocard:not(:first-child) {
+    display: none;
+  }
+}
