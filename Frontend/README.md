@@ -1,4 +1,4 @@
-# Frame-per-Second-frontend
+# TeamStreams-frontend
 
 # Getting Started with Create React App
 
